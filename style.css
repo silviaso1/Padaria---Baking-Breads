@@ -1,0 +1,210 @@
+body.index{
+    margin:0;
+    padding: 0;
+    background-image: url(https://i.pinimg.com/564x/31/c8/d1/31c8d1cabd384769bbb721c36fe19466.jpg);
+}
+body.produtos{
+    margin: 0;
+}
+a:visited {
+    color: inherit; 
+
+}
+a:link {
+    text-decoration: none; 
+    color: white
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    background-color: rgb(167, 155, 49);
+    color: white;
+    font-size: small;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    margin: 25px;
+}
+
+
+nav li {
+    margin-left: 35px;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+#topo {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 252, 252);
+    height: 600px;
+
+}
+#topo #lado-esq{
+   background-color: rgb(255, 255, 255);
+    width: 55%;
+    margin-right: 0;
+}
+
+#topo .top_article {
+    width: 45%; 
+    margin-left: 10px;
+    margin-left: 10px;
+    
+}
+#topo #lado-esq h1{
+    margin: 75px;
+    margin-bottom: 15px;
+    
+
+}
+#topo #lado-esq p{
+    margin-left: 95px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#topo .top_article img {
+    height: 600px;
+    width: 100%;
+    
+}
+#topo .top_article button{
+    margin-top: 25px;
+    margin-left: 55%;
+    height: 50px;
+    width: 270px;
+    border: 2px solid black;
+    border-radius: 35px;
+    background-color: rgb(54, 26, 26);
+    color: white;
+}
+#topo #lado-esq img{
+    height: 35px;
+    width: 65px;
+    margin: 10px;
+}
+.slogan {
+    background-color: black;
+    padding: 10px;
+    color: wheat;
+    text-align: center;
+    height: 315px;
+    position: relative;
+    margin: 10px;
+}
+
+#but{
+    margin-left: 38%;
+    margin-top: 35px;
+    height: 50px;
+    width: 360px;
+    border: 5px solid white;
+    border-radius: 35px;
+    background-color: rgb(54, 26, 26);
+    color: white;
+}
+.avalia {
+    display: flex;
+    margin: 10px;
+    height: 900px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    background-color: rgb(223, 210, 98);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    
+}
+.sobre{
+    display: flex;
+    margin: 10px;
+    margin-top: 25px;
+    height: 750px;
+    justify-content: space-between;
+    background-color: rgb(226, 162, 43);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+.avalia h3{
+    margin-left:90px;
+    font-size: medium;
+    margin-top: 35%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.4em;
+}
+
+.avalia #lado p{
+    margin-left: 90px;
+}
+#divi{
+    margin-top: 20%;
+    height: 55px;
+
+}
+#avaliacoes {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-top: 25%;
+    margin-right: 13%;
+
+}
+.avaliacao {
+    width: 290px;
+    text-align: center;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 5px;
+    height: 400px;
+    margin:15px;
+    font-size: 1.1em;
+    
+}
+.avaliacao img {
+    max-width: 55px;
+    border: 3px solid black;
+    border-radius: 35px;
+    margin-top: 45px;
+}
+
+.avaliacao audio {
+    width: 210px;
+    height: 120px;
+    
+}
+
+.avalia #botoes {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 65px;
+    margin-left: -350px;
+    margin-bottom: 75px;
+}
+
+.avalia #botoes button {
+    background-color: rgb(54, 26, 26);
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 555px;
+    width: 100%;
+    position: relative;
+    clip-path: polygon(0 90px, 100% 0, 100% 100%, 0 100%);
+    padding-top: 120px;
+    margin: 0;
+}
+footer p{
+    margin: 25px;
+}
+
