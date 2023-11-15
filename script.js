@@ -64,5 +64,18 @@ function mostrarProximaPagina() {
 
 window.onload = function () {
     mostrarPagina(1);
-    setInterval(mostrarProximaPagina, 5000); // Trocará de página a cada 5000 milissegundos (5 segundos)
+    setInterval(mostrarProximaPagina, 5000);
 };
+window.addEventListener('scroll', function() {
+    var barraLateral = document.querySelector('.barra-lateral');
+    var scrollAtual = window.scrollY;
+
+    var posicaoDescida = 500;
+
+    if (scrollAtual > posicaoDescida) {
+        var translateY = (scrollAtual - posicaoDescida);
+        barraLateral.style.transform = 'translateY(' + translateY + 'px)';
+    } else {
+        barraLateral.style.transform = 'translateY(0)';
+    }
+});

@@ -1,7 +1,7 @@
 body.index{
     margin:0;
     padding: 0;
-    background-image: url(https://i.pinimg.com/564x/31/c8/d1/31c8d1cabd384769bbb721c36fe19466.jpg);
+    background-image: url(./img/fundo.jpg)
 }
 body.produtos{
     margin: 0;
@@ -20,9 +20,12 @@ nav {
     width: 100%;
     height: 75px;
     justify-content: space-between;
-    background-color: rgb(167, 155, 49);
+    background-color: rgb(167, 112, 49);
     color: white;
     font-size: small;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 nav ul {
@@ -43,6 +46,7 @@ nav li {
     justify-content: space-between;
     background-color: rgb(255, 252, 252);
     height: 600px;
+    width: 100%;
 
 }
 #topo #lado-esq{
@@ -53,8 +57,8 @@ nav li {
 
 #topo .top_article {
     width: 45%; 
-    margin-left: 10px;
-    margin-left: 10px;
+    margin-top: 60px;
+
     
 }
 #topo #lado-esq h1{
@@ -71,7 +75,7 @@ nav li {
 }
 
 #topo .top_article img {
-    height: 600px;
+    height: 540px;
     width: 100%;
     
 }
@@ -84,6 +88,10 @@ nav li {
     border-radius: 35px;
     background-color: rgb(54, 26, 26);
     color: white;
+    cursor: pointer;
+}
+#topo .top_article button:hover{
+    background: blueviolet;
 }
 #topo #lado-esq img{
     height: 35px;
@@ -95,9 +103,7 @@ nav li {
     padding: 10px;
     color: wheat;
     text-align: center;
-    height: 315px;
-    position: relative;
-    margin: 10px;
+    height: 350px;
 }
 
 #but{
@@ -109,10 +115,14 @@ nav li {
     border-radius: 35px;
     background-color: rgb(54, 26, 26);
     color: white;
+    cursor: pointer;
+}
+#but:hover{
+    background: blueviolet;
 }
 .avalia {
     display: flex;
-    margin: 10px;
+    margin-bottom: 5px;
     height: 900px;
     margin-bottom: 0;
     justify-content: space-between;
@@ -122,23 +132,35 @@ nav li {
 }
 .sobre{
     display: flex;
-    margin: 10px;
-    margin-top: 25px;
-    height: 750px;
+    margin-bottom: 10px;
+    height: 550px;
     justify-content: space-between;
-    background-color: rgb(226, 162, 43);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    background-color: rgb(153, 148, 95);
+    clip-path: polygon(0 0px, 100% 0, 100% 100%, 0 80%);
+}
+.sobre img{
+    height: 45px;
+    margin-top: 95px; 
 }
 .avalia h3{
     margin-left:90px;
-    font-size: medium;
-    margin-top: 35%;
+    font-size:large;
+    margin-top: 37%;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 3.4em;
+    font-size: 3.8em;
+    margin-bottom: 3px;
 }
 
 .avalia #lado p{
     margin-left: 90px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1.1em;
+    margin-top: 0;
+    font-weight: bold;
+}
+.avalia #lado img{
+    margin-left: 65px;
+    margin-top: 90px;
 }
 #divi{
     margin-top: 20%;
@@ -158,8 +180,8 @@ nav li {
     text-align: center;
     border-top: 10px solid black;
     border-bottom: 10px solid black;
-    border-radius: 10px;
-    background-color: beige;
+    border-radius: 35px;
+    background-color: rgb(228, 228, 187);
     padding: 5px;
     height: 400px;
     margin:15px;
@@ -197,14 +219,68 @@ nav li {
 footer{
     background-color: black;
     color: white;
-    height: 555px;
+    height: 320px;
     width: 100%;
     position: relative;
     clip-path: polygon(0 90px, 100% 0, 100% 100%, 0 100%);
     padding-top: 120px;
     margin: 0;
 }
-footer p{
+.footer{
+    display: flex;
     margin: 25px;
+    margin-left: 45px;
+}
+.produto-header{
+    margin-top:60px ;
+    height: 490px;
+    width: 100%;
+    margin-bottom: -60px;
+}
+.paos h1{
+    position: relative;
+    top: -250px;
+    margin-left: 35%;
+    color: white;
+}
+.produto {
+    position: relative;
+    margin-left: 115px;
+    margin-top: 50px;
 }
 
+.corpo {
+    display: flex;
+    justify-content: center;
+}
+
+.barra-lateral {
+    width: 660px;
+    height: 440px;
+    background-color: rgb(226, 141, 43);
+    margin-left: 45px;
+    margin-top: 25px;
+    transition: transform 0.5s ease;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 20%;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%; /* Preenche completamente o contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    margin-left: -10px; 
+}

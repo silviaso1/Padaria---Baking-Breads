@@ -4,19 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Produtos</title>
 </head>
+
 <body class="produtos">
+    <header>
+        <nav>
+            <img src="caminho-para-sua-logo.jpg" alt="logo">
+            <ul>
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#section-avalia">Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="paos">
+        <img src="./img/tela2.jpg" alt="tela2" class="produto-header">
+        <h1>CONFIRA ABAIXO</h1>
+    </section>
+    
+    <div class="corpo">
+        <aside class="barra-lateral">
+            <section><input type="text"></section>
+            <section>
+                <ul>
+                    <li>nao sei</li>
+                    <li>nao sei</li>
+                    <li>nao sei</li>
+                    <li>nao sei</li>
+                </ul>
+            </section>
+        </aside>
+
+        <section class="produto">
+            <div id="page1" class="gallery">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
+                    <button class="buy-button" onclick="buyItem('Imagem 1')">Comprar</button>
+                </div>
+                <!-- Adicione mais divs conforme necessário -->
+            </div>
+
+            <div id="page2" class="gallery hidden">
+                <!-- Adicione 9 divs conforme necessário -->
+            </div>
+
+            <div id="page3" class="gallery hidden">
+                <!-- Adicione 9 divs conforme necessário -->
+            </div>
+
+            <div class="pagination">
+                <ul>
+                    <li><a href="#" onclick="showPage(1)">1</a></li>
+                    <li><a href="#" onclick="showPage(2)">2</a></li>
+                    <li><a href="#" onclick="showPage(3)">3</a></li>
+                    <!-- Adicione mais <li> conforme necessário -->
+                </ul>
+            </div>
+        </section>
+    </div>
     <footer>
-        <div class="footer-container">
-            <div class="footer-section contact">
+        <section class="footer">
+            <section class="footer-contato">
                 <h3>Entre em Contato</h3>
                 <p>Endereço: Rua da Amostra, 123</p>
                 <p>Telefone: (123) 456-7890</p>
                 <p>E-mail: info@exemplo.com</p>
-            </div>
+            </section>
     
-            <div class="footer-section links">
+            <section class="footer-links">
                 <h3>Links Úteis</h3>
                 <ul>
                     <li><a href="#">Página Inicial</a></li>
@@ -24,17 +124,17 @@
                     <li><a href="#">Sobre Nós</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
-            </div>
+            </section>
     
-            <div class="footer-section legal">
-                <h3>Informações Legais</h3>
+            <section class="footer-info">
+                <h3>Informações</h3>
                 <ul>
                     <li><a href="#">Política de Privacidade</a></li>
                     <li><a href="#">Termos de Serviço</a></li>
                 </ul>
-            </div>
+            </section>
     
-            <div class="footer-section social">
+            <div class="footer-redessociais">
                 <h3>Redes Sociais</h3>
                 <ul>
                     <li><a href="#" class="fa fa-facebook"></a></li>
@@ -42,11 +142,11 @@
                     <li><a href="#" class="fa fa-instagram"></a></li>
                 </ul>
             </div>
-        </div>
+        </section>
     
-        <div class="footer-bottom">
-            <p>&copy; 2023 Exemplo. Todos os direitos reservados. | Desenvolvido por [Seu Nome]</p>
-        </div>
+        <section class="footer-direitos">
+            <p>&copy; 2023. Alguns direitos reservados. | Desenvolvido por Silvia - Av2 Caw</p>
+        </section>
     </footer>
 </body>
 </html>
