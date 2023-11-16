@@ -67,13 +67,11 @@ window.onload = function () {
     setInterval(mostrarProximaPagina, 5000);
 };
 window.addEventListener('scroll', function() {
-    var barraLateral = document.querySelector('.barra-lateral');
-    var scrollAtual = window.scrollY;
-
-    var posicaoDescida = 500;
+    const barraLateral = document.querySelector('.barra-lateral'), scrollAtual = window.scrollY, posicaoDescida = 500;
+    let translateY;
 
     if (scrollAtual > posicaoDescida) {
-        var translateY = (scrollAtual - posicaoDescida);
+        translateY = (scrollAtual - posicaoDescida);
         barraLateral.style.transform = 'translateY(' + translateY + 'px)';
     } else {
         barraLateral.style.transform = 'translateY(0)';

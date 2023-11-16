@@ -1,7 +1,7 @@
 body.index{
     margin:0;
     padding: 0;
-    background-image: url(./img/fundo.jpg)
+    background-image: url(./img/pagina1/Fundo.jpg)
 }
 body.produtos{
     margin: 0;
@@ -18,9 +18,9 @@ a:link {
 nav {
     display: flex;
     width: 100%;
-    height: 75px;
+    height: 85px;
     justify-content: space-between;
-    background-color: rgb(167, 112, 49);
+    background-color: rgb(66, 56, 45);
     color: white;
     font-size: small;
     position: fixed;
@@ -32,61 +32,78 @@ nav ul {
     display: flex;
     float: right;
     margin: 25px;
+    margin-top: 35px;
 }
-
 
 nav li {
     margin-left: 35px;
     list-style-type: none;
     margin-bottom: 15px;
+    font-size: 0.9em;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: bold;
+}
+nav li:hover{
+    border: 3px dotted rgb(180, 167, 180);;
+    padding: 5px;
+    padding-bottom: 20px;
+    margin-top: -10px;
+}
+nav img{
+    margin-top: 0;
+    margin-left: 15px;
+    height: 85px;
+    width: 140px;
 }
 
 #topo {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 252, 252);
-    height: 600px;
+    height: 750px;
     width: 100%;
 
 }
 #topo #lado-esq{
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(209, 195, 158);
     width: 55%;
     margin-right: 0;
 }
 
 #topo .top_article {
     width: 45%; 
-    margin-top: 60px;
-
-    
+    margin-top: 85px;
 }
 #topo #lado-esq h1{
     margin: 75px;
     margin-bottom: 15px;
-    
+    margin-top: 35px;
+    width: 13em;
+    text-align: justify;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2em;
 
 }
 #topo #lado-esq p{
-    margin-left: 95px;
+    margin-left: 75px;
+    margin-top: 25px;
     font-family: 'Roboto Mono', sans-serif;
-    font-weight: bold;
-    font-size: 13px;
+    font-weight: bolder;
+    font-size: 1.1em;
 }
 
 #topo .top_article img {
-    height: 540px;
+    height: 100%;
     width: 100%;
     
 }
 #topo .top_article button{
-    margin-top: 25px;
-    margin-left: 55%;
+    margin-top: 55px;
+    margin-left: 75px;
     height: 50px;
-    width: 270px;
+    width: 300px;
     border: 2px solid black;
     border-radius: 35px;
-    background-color: rgb(54, 26, 26);
+    background-color: rgb(110, 96, 57);
     color: white;
     cursor: pointer;
 }
@@ -96,14 +113,34 @@ nav li {
 #topo #lado-esq img{
     height: 35px;
     width: 65px;
-    margin: 10px;
+    margin-top: 80px;
+    margin-left: 65px;
 }
 .slogan {
     background-color: black;
     padding: 10px;
-    color: wheat;
-    text-align: center;
+    color: rgb(196, 189, 174);
     height: 350px;
+    padding-top: 60px;
+}
+.slogan article{
+    text-align: center;
+}
+.slogan p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+    margin-top: 65px;
+    margin-left: 20em;
+    margin-right: 20em;
+    text-align: center;
+    width: auto;
+    border: 4px solid white;
+    border-radius: 25px;
+}
+.slogan h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.2em;
+    margin-top: 5px;
 }
 
 #but{
@@ -134,13 +171,37 @@ nav li {
     display: flex;
     margin-bottom: 10px;
     height: 550px;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(153, 148, 95);
     clip-path: polygon(0 0px, 100% 0, 100% 100%, 0 80%);
+    
+}
+.sobre .centralizar{
+    margin-left:10px;
+    margin-top: 65px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8em;
+    width: 45%;
+    text-align: justify;
+}
+.centralizar p{
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+.imagem{
+    margin-top: 50px;
+    margin-left: 12%; 
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 320px;
+    padding: 20px;
 }
 .sobre img{
-    height: 45px;
-    margin-top: 95px; 
+    height: 300px;
+    width: 280px;
+    border: 3px solid black;
+    border-radius: 20px;
 }
 .avalia h3{
     margin-left:90px;
@@ -197,7 +258,10 @@ nav li {
 
 .avaliacao audio {
     width: 210px;
-    height: 120px;
+    height: 50px;
+    margin-top: 60px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
     
 }
 
@@ -228,8 +292,25 @@ footer{
 }
 .footer{
     display: flex;
-    margin: 25px;
-    margin-left: 45px;
+    justify-content: center;
+}
+footer h3{
+    text-align: center;
+}
+footer img{
+    height: 170px;
+
+}
+footer ul{
+    list-style-type: none;
+    margin-left: -30px;
+}
+.espacamento{
+    margin-left: 85px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 95px;
 }
 .produto-header{
     margin-top:60px ;
@@ -259,7 +340,7 @@ footer{
     height: 440px;
     background-color: rgb(226, 141, 43);
     margin-left: 45px;
-    margin-top: 25px;
+    margin-top: 35px;
     transition: transform 0.5s ease;
 }
 .gallery {
@@ -275,8 +356,8 @@ footer{
 }
 
 .gallery img {
-    width: 100%; /* Preenche completamente o contêiner pai */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    height: auto;
     object-fit: cover;
     margin-bottom: 10px;
 }
