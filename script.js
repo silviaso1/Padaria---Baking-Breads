@@ -1,79 +1,70 @@
-const avaliacoes = [
-    { foto: 'https://conteudo.imguol.com.br/c/entretenimento/16/2017/06/27/naruto-1498593686428_v2_1x1.png', nome: 'Naruto da Silva', avaliacao: 'Muito bom! O sonho daqui é o melhor', audio: './audio/audio1.mp3' },
-    { foto: './img/foto2.jpg', nome: 'Nome Avaliação 2', avaliacao: 'Avaliação 2', audio: './audio/audio2.mp3' },
-    { foto: './img/foto2.jpg', nome: 'Nome Avaliação 2', avaliacao: 'Avaliação 2', audio: './audio/audio2.mp3' },
-    { foto: './img/foto2.jpg', nome: 'Nome Avaliação 2', avaliacao: 'Avaliação 2', audio: './audio/audio2.mp3' },
-    { foto: './img/foto2.jpg', nome: 'Nome Avaliação 2', avaliacao: 'Avaliação 2', audio: './audio/audio2.mp3' },
-    { foto: './img/foto2.jpg', nome: 'Nome Avaliação 2', avaliacao: 'Avaliação 2', audio: './audio/audio2.mp3' },
-    { foto: './img/foto2.jpg', nome: 'Nome Avaliação 2', avaliacao: 'Avaliação 2', audio: './audio/audio2.mp3' },
-    { foto: './img/foto2.jpg', nome: 'Nome Avaliação 2', avaliacao: 'Avaliação 2', audio: './audio/audio2.mp3' },
-];
-
-const avaliacoesPorPagina = 2;
-let paginaAtual = 1;
-
 function mostrarPagina(numeroPagina) {
-    const avaliacoesContainer = document.getElementById('avaliacoes');
-    avaliacoesContainer.innerHTML = '';
+    const avaliacoesElements = document.querySelectorAll('.avaliacao');
 
-    for (let i = 0; i < avaliacoesPorPagina; i++) {
-        const index = (numeroPagina - 1) * avaliacoesPorPagina + i;
-        if (index < avaliacoes.length) {
-            const avaliacao = avaliacoes[index];
-            const sectionAvaliacao = criarAvaliacao(avaliacao);
-            avaliacoesContainer.appendChild(sectionAvaliacao);
+    const itensPorPagina = 2;
+    const startIndex = (numeroPagina - 1) * itensPorPagina;
+    const endIndex = startIndex + itensPorPagina;
+
+    avaliacoesElements.forEach(function (avaliacao, index) {
+        if (index >= startIndex && index < endIndex) {
+            avaliacao.classList.remove('hidden');
+        } else {
+            avaliacao.classList.add('hidden');
         }
-    }
+    });
 
     paginaAtual = numeroPagina;
 }
 
-function criarAvaliacao(avaliacao) {
-    const sectionAvaliacao = document.createElement('section');
-    sectionAvaliacao.classList.add('avaliacao');
-
-    const img = document.createElement('img');
-    img.src = avaliacao.foto;
-    img.alt = 'Foto da avaliação';
-
-    const h1Nome = document.createElement('h1');
-    h1Nome.textContent = avaliacao.nome;
-
-    const pAvaliacao = document.createElement('p');
-    pAvaliacao.textContent = avaliacao.avaliacao;
-
-    const audio = document.createElement('audio');
-    audio.controls = true;
-    const source = document.createElement('source');
-    source.src = avaliacao.audio;
-    source.type = 'audio/mp3';
-    audio.appendChild(source);
-
-    sectionAvaliacao.appendChild(img);
-    sectionAvaliacao.appendChild(h1Nome);
-    sectionAvaliacao.appendChild(pAvaliacao);
-    sectionAvaliacao.appendChild(audio);
-
-    return sectionAvaliacao;
-}
-
-function mostrarProximaPagina() {
-    const proximaPagina = paginaAtual % Math.ceil(avaliacoes.length / avaliacoesPorPagina) + 1;
-    mostrarPagina(proximaPagina);
-}
 
 window.onload = function () {
     mostrarPagina(1);
-    setInterval(mostrarProximaPagina, 5000);
 };
 window.addEventListener('scroll', function() {
-    const barraLateral = document.querySelector('.barra-lateral'), scrollAtual = window.scrollY, posicaoDescida = 500;
+    const barraLateral = document.querySelector('.barra-lateral');
+    const scrollAtual = window.scrollY;
+    const posicaoDescida = 500;
+    const alturaLimite = 900; 
+
     let translateY;
 
     if (scrollAtual > posicaoDescida) {
-        translateY = (scrollAtual - posicaoDescida);
+        translateY = scrollAtual - posicaoDescida;
+
+        if (translateY > alturaLimite) {
+            translateY = alturaLimite;
+        }
+
         barraLateral.style.transform = 'translateY(' + translateY + 'px)';
     } else {
         barraLateral.style.transform = 'translateY(0)';
     }
 });
+
+
+
+function pesquisarProdutos() {
+    const termoPesquisa = document.getElementById('searchInput').value.toLowerCase();
+    const produtos = document.querySelectorAll('.gallery-item');
+  
+    produtos.forEach(function (produto) {
+      const nomeProduto = produto.querySelector('h1').textContent.toLowerCase();
+      const estaIncluido = nomeProduto.includes(termoPesquisa);
+  
+      if (estaIncluido) {
+        produto.style.display = 'block';
+      } else {
+        produto.style.display = 'none';
+      }
+    });
+  }
+  function mudançaPage(pageNumber) {
+    
+    var pages = document.querySelectorAll('.gallery');
+    pages.forEach(function(page) {
+      page.classList.add('hidden');
+    });
+
+    var selectedPage = document.getElementById('page' + pageNumber);
+    selectedPage.classList.remove('hidden');
+  }

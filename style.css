@@ -232,8 +232,8 @@ nav img{
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
-    margin-top: 25%;
     margin-right: 13%;
+    margin-top: 25%;
 
 }
 .avaliacao {
@@ -248,6 +248,10 @@ nav img{
     margin:15px;
     font-size: 1.1em;
     
+    
+}
+.avaliacao.hidden {
+    display: none;
 }
 .avaliacao img {
     max-width: 55px;
@@ -308,13 +312,16 @@ footer ul{
 .espacamento{
     margin-left: 85px;
 }
+.footer i{
+    font-size: 45px;
+}
 .copyright{
     text-align: center;
     margin-top: 95px;
 }
 .produto-header{
     margin-top:60px ;
-    height: 490px;
+    height: 400px;
     width: 100%;
     margin-bottom: -60px;
 }
@@ -336,32 +343,90 @@ footer ul{
 }
 
 .barra-lateral {
-    width: 660px;
+    width: 550px;
     height: 440px;
     background-color: rgb(226, 141, 43);
-    margin-left: 45px;
+    margin-left: 30px;
     margin-top: 35px;
     transition: transform 0.5s ease;
+    border: 2px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    
+}
+.barra-lateral input{
+    margin-top: 45px;
+    width: 75%;
+    margin-left: 10%;
+    border: 2px solid black;
+    border-radius: 5px;
+    
 }
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 20px;
+    
 }
 
 .gallery-item {
-    width: 20%;
+    width: 200px;
     box-sizing: border-box;
-    margin: 10px;
+    margin-top: 5px;
+    margin: 8px;
     text-align: center;
+    border: 4px solid black;
+    border-radius: 30px;
+    padding: 15px;
+    height: 380px;
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 150px;
+    height: 160px;
     margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 25px;
 }
+.gallery.hidden {
+    display: none;
+  }
 
 .buy-button {
-    margin-left: -10px; 
+    margin-left: 5px; 
+    background-color: rgb(188, 164, 211);
+    width: 75px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.pagination ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: -105px;
+    justify-content: center;
+}
+.pagination li{
+    border: 2px solid rgb(88, 87, 87);
+    margin-left: 10px;
+    width: 15px;
+    padding: 5px;
+    text-align: center;
+}
+.alinhamento{
+    display: flex;
+    align-items:center;
+    height: 170px;
+    background-color: rgb(109, 93, 50);
+    margin-bottom: 45px;
+}
+.produto-confeitaria{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(160, 125, 31);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.produto-confeitaria img{
+    height: 45px;
+    width: 95px;
 }
