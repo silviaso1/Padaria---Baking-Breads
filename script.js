@@ -24,8 +24,8 @@ window.onload = function () {
 window.addEventListener('scroll', function() {
     const barraLateral = document.querySelector('.barra-lateral');
     const scrollAtual = window.scrollY;
-    const posicaoDescida = 400;
-    const alturaLimite = 860; 
+    const posicaoDescida = 1080;
+    const alturaLimite = 760; 
 
     let translateY;
 

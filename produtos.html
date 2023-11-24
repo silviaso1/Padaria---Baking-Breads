@@ -19,10 +19,39 @@
         </ul>
     </nav>
 </header>
+    
     <section class="paos">
         <img src="./img/pagina2/tela2.jpg" alt="tela2" class="produto-header">
     </section>
-    
+    <section class="alinhaembaixodafotodospaes">
+        <div class="embaixoDaFoto">
+            <h2>Produtos em promoção diariamente!</h2>
+            <p>Frete grátis para toda Zona Norte</p>
+        </div>
+    </section>
+    <section class="destaque-produtos">
+        <article class="galeriadecimaAlinhar">
+            <div>
+                <h1>Veja os destaques de confeitaria da semana: </h1>
+            </div>
+            <article class="galeria-item">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 3">
+                    <button class="buy-button" onclick="buyItem('produto 3')">Comprar</button>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 4">
+                    <button class="buy-button" onclick="buyItem('produto 4')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 5">
+                    <button class="buy-button" onclick="buyItem('produto 5')">Comprar</button>
+                </div>
+            </article>
+        </article>
+    </section>
+
     <div class="corpo">
         <aside class="barra-lateral">
             <section>
@@ -30,204 +59,614 @@
                 <h3>Categorias:</h3>
             <section>
                 <ul>
-                    <li>Promoção do dia</li>
-                    <li><a href="#" onclick="mudançaPage(2)">Pães</a></li>
-                    <li>Salgados e lanches</li>
-                    <li>Bebidas</li>
-                    <li>Bolos</li>
+                    <li><a href="#" onclick="mudançaPage(1)">Pães</a></li>
+                    <li><a href="#" onclick="mudançaPage(2)">Lanches</a></li>
+                    <li><a href="#" onclick="mudançaPage(3)">Bolos</a></li>
                 </ul>
             </section>
         </aside>
-
         <section class="produto">
-                
-            <div id="page1" class="gallery">
-                <div class="gallery-item">
-                    <img src="./img/pagina2/parte padaria/pao-frances.jpg" alt="Imagem 1">
-                    <h1>Pão Francês</h1>
-                    <h2>R$0,99</h2>
-                    <a href="carrinho.html#P%C3%A3o%20Franc%C3%AAs">
-                        <button class="buy-button">Comprar</button>
-                    </a>
+            <section>
+                <div>
+                    <p class="buscaResult">Confira abaixo as delícias que temos</p>
                 </div>
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="./img/pagina2/parte padaria/pao-de-queijo.jpg" alt="Imagem 2">
-                    <h1>Pão-de-queijo</h1>
-                    <h2>R$1,10</h2>
-                    <button class="buy-button" onclick="buyItem('sonho')">Comprar</button>
-                </div>
-                <!-- Repeti os elementos para criar um total de 12 itens -->
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 3">
-                    <button class="buy-button" onclick="buyItem('produto 3')">Comprar</button>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 4">
-                    <button class="buy-button" onclick="buyItem('produto 4')">Comprar</button>
-                </div>
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 5">
-                    <button class="buy-button" onclick="buyItem('produto 5')">Comprar</button>
-                </div>
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
-                </div>
-            </div>
+                <div id="page1" class="gallery">
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/pao-frances.jpg" alt="Imagem 1">
+                                <h1>Pão Francês</h1>
+                                <h2>R$0,99</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/pao-preto.jpg" alt="Imagem 2">
+                                <h1>Pão preto</h1>
+                                <h2>R$1,10</h2>
+                            </div>
+                            <div class="tras">
+                                <p>Descrição do Pão-de-queijo</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/baguete.jpg" alt="Imagem 3">
+                                <h1>Baguete</h1>
+                                <h2>R$4,00</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/bisnaguinha.jpg" alt="Imagem 4">
+                                <h1>Bisnaguinha</h1>
+                                <h2>R$2,50</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Adicionei descrições aos produtos -->
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/brioche.jpg" alt="Imagem 5">
+                                <h1>Brioche</h1>
+                                <h2></h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Adicionei descrições aos produtos -->
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/focaccia.jpg"alt="Imagem 6">
+                                <h1>Focaccia</h1>
+                                <h2>R$0,99</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/pao-doce.jpg" alt="Imagem 7">
+                                <h1>Pão doce</h1>
+                                <h2>R$0,99</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/pao_goiaba.jpg" alt="Imagem 8">
+                                <h1>Pão doce com goiabada</h1>
+                                <h2>R$0,99</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/pao doce chocolate.jpg" alt="Imagem 9">
+                                <h1>Pão doce com chocolate</h1>
+                                <h2>R$0,99</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/broa.jpg" alt="Imagem 9">
+                                <h1>Broa</h1>
+                                <h2>R$0,99</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/hotdog.jpg" alt="Imagem 9">
+                                <h1>Pão de cachorro quente-Grande</h1>
+                                <h2>R$0,99</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="frente">
+                                <!-- Conteúdo da frente do card -->
+                                <img src="./img/pagina2/parte padaria/pao hotdog.jpg" alt="Imagem 9">
+                                <h1>Pão de cachorro quente</h1>
+                                <h2>R$0,99</h2>
+                            </div>
+                            <div class="tras">
+                                <!-- Conteúdo de trás do card -->
+                                <p>Descrição do Pão Francês</p>
+                                <a href="carrinho.html">
+                                    <button class="buy-button">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
     
             <div id="page2" class="gallery hidden">
                 <div class="gallery-item">
-                    <img src="./img/pagina2/parte padaria/pao-frances.jpg" alt="Imagem 1">
-                    <h1></h1>
-                    <h2>R$0,99</h2>
-                    <a href="carrinho.html#P%C3%A3o%20Franc%C3%AAs">
-                        <button class="buy-button">Comprar</button>
-                    </a>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Adicionei descrições aos produtos -->
+               
                 <div class="gallery-item">
-                    <img src="./img/pagina2/parte padaria/pao-de-queijo.jpg" alt="Imagem 2">
-                    <h1>Pão-de-queijo</h1>
-                    <h2>R$1,10</h2>
-                    <button class="buy-button" onclick="buyItem('sonho')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/pretzel.jpg" alt="Imagem 9">
+                            <h1>Pretzel</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Repeti os elementos para criar um total de 12 itens -->
-                <!-- Adicionei descrições aos produtos -->
+               
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 3">
-                    <button class="buy-button" onclick="buyItem('produto 3')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/Pretzel-Doce.jpg" alt="Imagem 9">
+                            <h1>Pretzel-Doce</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Adicionei descrições aos produtos -->
+               
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 4">
-                    <button class="buy-button" onclick="buyItem('produto 4')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/Sonho.jpg" alt="Imagem 9">
+                            <h1>Sonho</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Adicionei descrições aos produtos -->
+               
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 5">
-                    <button class="buy-button" onclick="buyItem('produto 5')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/sonho de bisnaguinha.jpg" alt="Imagem 9">
+                            <h1>Sonho de bisnaguinha</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Adicionei descrições aos produtos -->
+               
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/pao-de-queijo.jpgalt="Imagem 9">
+                            <h1>Pão de queijo</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="gallery-item">
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="gallery-item">
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="gallery-item">
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+               
             </div>
             <div id="page3" class="gallery hidden">
                 <div class="gallery-item">
-                    <img src="./img/pagina2/parte padaria/pao-frances.jpg" alt="Imagem 1">
-                    <h1>Pão Francês</h1>
-                    <h2>R$0,99</h2>
-                    <a href="carrinho.html#P%C3%A3o%20Franc%C3%AAs">
-                        <button class="buy-button">Comprar</button>
-                    </a>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Adicionei descrições aos produtos -->
+               
                 <div class="gallery-item">
-                    <img src="./img/pagina2/parte padaria/pao-de-queijo.jpg" alt="Imagem 2">
-                    <h1>Pão-de-queijo</h1>
-                    <h2></h2>
-                    <button class="buy-button" onclick="buyItem('sonho')">Comprar</button>
-                </div>
-                <!-- Repeti os elementos para criar um total de 12 itens -->
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 3">
-                    <button class="buy-button" onclick="buyItem('produto 3')">Comprar</button>
-                </div>
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 4">
-                    <button class="buy-button" onclick="buyItem('produto 4')">Comprar</button>
-                </div>
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 5">
-                    <button class="buy-button" onclick="buyItem('produto 5')">Comprar</button>
-                </div>
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="gallery-item">
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="gallery-item">
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="gallery-item">
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
-                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+               
+                <div class="gallery-item">
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="card">
+                        <div class="frente">
+                            <!-- Conteúdo da frente do card -->
+                            <img src="./img/pagina2/parte padaria/croissant.jpg" alt="Imagem 9">
+                            <h1>Croissant</h1>
+                            <h2>R$0,99</h2>
+                        </div>
+                        <div class="tras">
+                            <!-- Conteúdo de trás do card -->
+                            <p>Descrição do Pão Francês</p>
+                            <a href="carrinho.html">
+                                <button class="buy-button">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
             </div>
 
-            <div class="pagination">
+            <section class="pagination">
                 <ul>
                     <li><a href="#" onclick="mudançaPage(1)">1</a></li>
                     <li><a href="#" onclick="mudançaPage(2)">2</a></li>
                     <li><a href="#" onclick="mudançaPage(3)">3</a></li>
-                    <li><a href="#" onclick="mudançaPage(4)">4</a></li>
                 </ul>
-            </div>
+            </section>
 
         </section>
     </div>
 
-    <!--
-    <section class="produto-confeitaria">
-        <article class="alinhamento">
-            <img src="./img/8b708e3db142bcdb426860846b279da1-removebg-preview.png" alt="">
-            <h1>cadjadad fad aa da adnadnakdl adnadada</h1>
-        </article>
-    
-        <article class="alinhamento">
-            <h1>cadjadad fad aa da adnadnakdl adnadada</h1>
-            <img src="" alt="">
-        </article>
-    
-        <article class="alinhamento">
-            <img src="" alt="">
-            <h1>cadjadad fad aa da adnadnakdl adnadada</h1>
-        </article>
-    
-        <article class="alinhamento">
-            <img src="" alt="">
-            <h1>cadjadad fad aa da adnadnakdl adnadada</h1>
-        </article>
-    </section>
-    -->
     
     <footer>
         <section class="footer">
@@ -254,14 +693,6 @@
                 <ul>
                     <li><a href="#">Política de Privacidade</a></li>
                     <li><a href="#">Termos de Serviço</a></li>
-                </ul>
-            </section>
-    
-            <section class="footer-redessociais espacamento">
-                <h3>Redes Sociais</h3>
-                <ul>
-                    <li><a href="#" class="facebook"></a><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></li>
-                    <li><a href="#" class="instagram"></a><i class="fa-brands fa-twitter" style="color: #b8b8b8;"></i></li>
                 </ul>
             </section>
             <section class="espacamento">
