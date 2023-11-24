@@ -6,6 +6,10 @@ body.index{
 body.produtos{
     margin: 0;
 }
+body.carrinho{
+    margin: 0;
+    background-image: url(./img/pagina3/fundo.jpg);
+}
 a:visited {
     color: inherit; 
 
@@ -20,12 +24,16 @@ nav {
     width: 100%;
     height: 85px;
     justify-content: space-between;
-    background-color: rgb(66, 56, 45);
+    background-color: rgb(97, 82, 67);
     color: white;
     font-size: small;
     position: fixed;
     top: 0;
     z-index: 1;
+}
+.page-carrinho{
+    height: 80px;
+    position: static;
 }
 
 nav ul {
@@ -208,7 +216,7 @@ nav img{
     font-size:large;
     margin-top: 37%;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 3.8em;
+    font-size: 3.7em;
     margin-bottom: 3px;
 }
 
@@ -243,7 +251,7 @@ nav img{
     border-bottom: 10px solid black;
     border-radius: 35px;
     background-color: rgb(228, 228, 187);
-    padding: 5px;
+    padding: 10px;
     height: 400px;
     margin:15px;
     font-size: 1.1em;
@@ -292,6 +300,7 @@ footer{
     position: relative;
     clip-path: polygon(0 90px, 100% 0, 100% 100%, 0 100%);
     padding-top: 120px;
+    margin-bottom: 0;
     margin: 0;
 }
 .footer{
@@ -301,10 +310,6 @@ footer{
 footer h3{
     text-align: center;
 }
-footer img{
-    height: 170px;
-
-}
 footer ul{
     list-style-type: none;
     margin-left: -30px;
@@ -312,7 +317,7 @@ footer ul{
 .espacamento{
     margin-left: 85px;
 }
-.footer i{
+.footer.rodape i{
     font-size: 45px;
 }
 .copyright{
@@ -325,16 +330,12 @@ footer ul{
     width: 100%;
     margin-bottom: -60px;
 }
-.paos h1{
-    position: relative;
-    top: -250px;
-    margin-left: 35%;
-    color: white;
-}
+
 .produto {
     position: relative;
     margin-left: 115px;
     margin-top: 50px;
+    height: auto;
 }
 
 .corpo {
@@ -343,50 +344,61 @@ footer ul{
 }
 
 .barra-lateral {
-    width: 550px;
-    height: 440px;
-    background-color: rgb(226, 141, 43);
-    margin-left: 30px;
-    margin-top: 35px;
+    width: 560px;
+    height: 380px;
+    background-color:  rgb(196, 173, 112);
+    margin-left: 120px;
+    margin-right: -70px ;
+    margin-top: 95px;
     transition: transform 0.5s ease;
     border: 2px solid black;
     border-radius: 15px;
-    justify-content: center;
     
 }
-.barra-lateral input{
-    margin-top: 45px;
+.barra-lateral h1{
+    margin-left: 15px;
+    width: 85%;
+    text-align: center;
+    border: 1px solid black;
+}
+.barra-lateral h3{
+    margin-left: 15px;
     width: 75%;
-    margin-left: 10%;
-    border: 2px solid black;
-    border-radius: 5px;
-    
+    border-bottom: 2px solid black;
+}
+
+.barra-lateral li{
+    position: relative;
+    right: 25px;
+    margin-right:15px ;
+    list-style-type: none;;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom:1px solid black ;
 }
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 25px;
+    margin-top: 35px;
     
 }
 
 .gallery-item {
-    width: 200px;
+    width: 230px;
     box-sizing: border-box;
     margin-top: 5px;
     margin: 8px;
     text-align: center;
-    border: 4px solid black;
-    border-radius: 30px;
-    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
     height: 380px;
 }
 
 .gallery img {
-    width: 150px;
+    width: 100%;
     height: 160px;
     margin-bottom: 10px;
-    border: 3px solid black;
-    border-radius: 25px;
 }
 .gallery.hidden {
     display: none;
@@ -423,10 +435,210 @@ footer ul{
 .produto-confeitaria{
     width: 100%;
     height: 900px;
-    background-color: rgb(160, 125, 31);
+    background-color: rgb(255, 255, 255);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 .produto-confeitaria img{
+    height: 140px;
+    width: 140px;
+    margin: 25px;
+}
+
+.centralizaaa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.section-container{
+    background-color: rgb(235, 233, 229);
+    height: auto;
+    width: 77em;
+    margin-top: 50px;
+    margin-bottom: 85px;
+    padding-top: 45px;
+    border-radius: 20px;
+    border-top: 15px solid black;
+    border-bottom: 15px solid black;
+    padding-bottom: 35px;
+}
+.linhaCima{
+    display: flex;
+    justify-content: space-between;
+}
+.linhaCima button{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 60px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.descricao-coluna{
+    display: flex;
+    justify-content: space-around;
+    margin: 45px;
+    margin-top: 0;
+    border-bottom: 2px solid black;
+}
+.personalizacao-texto{
+    border: 2px solid  rgb(170, 169, 169);
+    width: 12em;
+    border-radius: 25px;
+    text-align: center;
+}
+#personalizacao-texto{
+    border: 2px solid  rgb(170, 169, 169);
+    width: 15em;
+    border-radius: 25px;
+    text-align: center;
+}
+.precos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-left: 50px;
+    min-height: 170px;
+    height: auto;
+    width: 92%;
+    background-color: rgb(235, 227, 227);
+    border: 2px solid black;
+    border-radius: 35px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+
+}
+
+.pagamento .total{
+    margin-bottom: 15px;
+}
+.pagamento button{
+    background-color: rgb(223, 44, 44);
+    color: white;
+    border: 2px solid rgb(219, 91, 91);
+    border-radius: 25px;
     height: 45px;
-    width: 95px;
+    width: 135px;
+    margin-right: 60px;
+    cursor: pointer;
+
+}
+.pagamento button:hover{
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+}
+.pagamento-metodo{
+    margin-left: 35px;
+}
+.pagamento-metodo p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+}
+label{
+    display: block;
+}
+.iconePagamento{
+    height: 17px;
+    width: 17px;
+}
+.section-container h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 33px;
+    margin-left: 45px;
+    margin-top: 5px;
+}
+.itens{
+    margin-top: 2em;;
+    margin-left: 45px;
+    min-height: 45px;
+    height: auto;
+    width: 90%;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #a8a6a6;
+    border-radius: 5px;
+}
+
+
+.itens #adicionar{
+    margin-left: 36em;
+    border-radius: 35px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.itens-compra{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    
+}
+.nome-item{
+    display: flex;
+}
+
+.nome-produto-texto{
+    margin-left: 2px;
+    margin-top: 25px;
+    font-size: 1.2em;
+    width: 120px;
+
+}
+.nome-item img{
+    height: 75px;
+    width: 75px;
+    margin-right: 25px;
+    margin-left: 45px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+
+ }
+.quantidade-input{
+    position: relative;
+    left: 7px;
+    width: 20px;
+    height: 25px;
+    background-color: transparent;
+    text-align: center;
+    
+}
+#quantidadeInput{
+    width: 65px;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-left: 135px;
+    background-color: transparent;
+}
+select{
+    margin-left: 25px;
+    background-color: transparent;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.quantidade-container{
+    display: flex;
+    margin-left: 120px;
+    margin-top: 5px;
+}
+.valor-unitario{
+    position: relative;
+    left: 190px;
+}
+.remover{
+    position: relative;
+    left: 32em;
+    background-color: rgb(219, 91, 91);
+    margin-top: 10px;
+    color: white;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.remover:hover{
+    background-color: blueviolet;
 }

@@ -12,40 +12,90 @@
 <body class="produtos">
     <header>
     <nav>
-        <img src="./img/logoo.png" alt="logo">
+        <a href="index.html"><img src="./img/logoo.png" alt="logo"></a>
         <ul>
-            <li><a href="#quem-somos">Quem somos</a></li>
-            <li><a href="#section-avalia">Avaliações</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
             <li><a href="carrinho.html">Carrinho</a></li>
-            <li id="carrinho-header"></li>
         </ul>
     </nav>
 </header>
     <section class="paos">
         <img src="./img/pagina2/tela2.jpg" alt="tela2" class="produto-header">
-        <h1>CONFIRA ABAIXO</h1>
     </section>
     
     <div class="corpo">
         <aside class="barra-lateral">
-            <section><input type="text" placeholder="Procurar produtos" id="searchInput" oninput="pesquisarProdutos()"></section>
+            <section>
+                <h1>Busca de Produtos</h1>
+                <h3>Categorias:</h3>
             <section>
                 <ul>
-                    <li>Veja também</li>
-                    <li>Seção confeitaria</li>
-                    <li>Sobre nós</li>
-                    <li>Avaliaçoes</li>
+                    <li>Promoção do dia</li>
+                    <li><a href="#" onclick="mudançaPage(2)">Pães</a></li>
+                    <li>Salgados e lanches</li>
+                    <li>Bebidas</li>
+                    <li>Bolos</li>
                 </ul>
             </section>
         </aside>
 
         <section class="produto">
+                
             <div id="page1" class="gallery">
-                <!-- Conteúdo da Página 1 -->
-                <!-- Adicionei descrições aos produtos -->
                 <div class="gallery-item">
                     <img src="./img/pagina2/parte padaria/pao-frances.jpg" alt="Imagem 1">
                     <h1>Pão Francês</h1>
+                    <h2>R$0,99</h2>
+                    <a href="carrinho.html#P%C3%A3o%20Franc%C3%AAs">
+                        <button class="buy-button">Comprar</button>
+                    </a>
+                </div>
+                <!-- Adicionei descrições aos produtos -->
+                <div class="gallery-item">
+                    <img src="./img/pagina2/parte padaria/pao-de-queijo.jpg" alt="Imagem 2">
+                    <h1>Pão-de-queijo</h1>
+                    <h2>R$1,10</h2>
+                    <button class="buy-button" onclick="buyItem('sonho')">Comprar</button>
+                </div>
+                <!-- Repeti os elementos para criar um total de 12 itens -->
+                <!-- Adicionei descrições aos produtos -->
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 3">
+                    <button class="buy-button" onclick="buyItem('produto 3')">Comprar</button>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 4">
+                    <button class="buy-button" onclick="buyItem('produto 4')">Comprar</button>
+                </div>
+                <!-- Adicionei descrições aos produtos -->
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 5">
+                    <button class="buy-button" onclick="buyItem('produto 5')">Comprar</button>
+                </div>
+                <!-- Adicionei descrições aos produtos -->
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
+                </div>
+            </div>
+    
+            <div id="page2" class="gallery hidden">
+                <div class="gallery-item">
+                    <img src="./img/pagina2/parte padaria/pao-frances.jpg" alt="Imagem 1">
+                    <h1></h1>
                     <h2>R$0,99</h2>
                     <a href="carrinho.html#P%C3%A3o%20Franc%C3%AAs">
                         <button class="buy-button">Comprar</button>
@@ -79,206 +129,67 @@
                     <img src="https://via.placeholder.com/150" alt="Imagem 6">
                     <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
                 </div>
-                <!-- Adicionei descrições aos produtos -->
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 7">
-                    <button class="buy-button" onclick="buyItem('produto 7')">Comprar</button>
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
                 </div>
-                <!-- Adicionei descrições aos produtos -->
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 8">
-                    <button class="buy-button" onclick="buyItem('produto 8')">Comprar</button>
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
                 </div>
-                <!-- Adicionei descrições aos produtos -->
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 9">
-                    <button class="buy-button" onclick="buyItem('produto 9')">Comprar</button>
-                </div>
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 10">
-                    <button class="buy-button" onclick="buyItem('produto 10')">Comprar</button>
-                </div>
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 11">
-                    <button class="buy-button" onclick="buyItem('produto 11')">Comprar</button>
-                </div>
-                <!-- Adicionei descrições aos produtos -->
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 12">
-                    <button class="buy-button" onclick="buyItem('produto 12')">Comprar</button>
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
                 </div>
             </div>
-    
-            <div id="page2" class="gallery hidden">
+            <div id="page3" class="gallery hidden">
                 <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="./img/pagina2/parte padaria/pao-frances.jpg" alt="Imagem 1">
+                    <h1>Pão Francês</h1>
+                    <h2>R$0,99</h2>
+                    <a href="carrinho.html#P%C3%A3o%20Franc%C3%AAs">
+                        <button class="buy-button">Comprar</button>
+                    </a>
+                </div>
+                <!-- Adicionei descrições aos produtos -->
+                <div class="gallery-item">
+                    <img src="./img/pagina2/parte padaria/pao-de-queijo.jpg" alt="Imagem 2">
+                    <h1>Pão-de-queijo</h1>
+                    <h2></h2>
+                    <button class="buy-button" onclick="buyItem('sonho')">Comprar</button>
+                </div>
+                <!-- Repeti os elementos para criar um total de 12 itens -->
+                <!-- Adicionei descrições aos produtos -->
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 3">
+                    <button class="buy-button" onclick="buyItem('produto 3')">Comprar</button>
+                </div>
+                <!-- Adicionei descrições aos produtos -->
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 4">
+                    <button class="buy-button" onclick="buyItem('produto 4')">Comprar</button>
+                </div>
+                <!-- Adicionei descrições aos produtos -->
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 5">
+                    <button class="buy-button" onclick="buyItem('produto 5')">Comprar</button>
+                </div>
+                <!-- Adicionei descrições aos produtos -->
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
                 </div>
                 <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
                 </div>
                 <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
                 </div>
                 <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="card-inner">
-                            <div class="front">
-                                <img src="https://via.placeholder.com/150" alt="Imagem 13">
-                                <h1>Doce</h1>
-                                <h2>R$9,99</h2>
-                            </div>
-                            <div class="back">
-                                <button class="buy-button" onclick="buyItem('produto 13')">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+                    <button class="buy-button" onclick="buyItem('produto 6')">Comprar</button>
                 </div>
             </div>
 
@@ -286,15 +197,18 @@
                 <ul>
                     <li><a href="#" onclick="mudançaPage(1)">1</a></li>
                     <li><a href="#" onclick="mudançaPage(2)">2</a></li>
+                    <li><a href="#" onclick="mudançaPage(3)">3</a></li>
+                    <li><a href="#" onclick="mudançaPage(4)">4</a></li>
                 </ul>
             </div>
 
         </section>
     </div>
 
+    <!--
     <section class="produto-confeitaria">
         <article class="alinhamento">
-            <img src="./img/pagina1/Fundo.jpg" alt="">
+            <img src="./img/8b708e3db142bcdb426860846b279da1-removebg-preview.png" alt="">
             <h1>cadjadad fad aa da adnadnakdl adnadada</h1>
         </article>
     
@@ -313,6 +227,7 @@
             <h1>cadjadad fad aa da adnadnakdl adnadada</h1>
         </article>
     </section>
+    -->
     
     <footer>
         <section class="footer">
@@ -345,12 +260,12 @@
             <section class="footer-redessociais espacamento">
                 <h3>Redes Sociais</h3>
                 <ul>
-                    <li><a href="#" class="facebook"></a></li>
-                    <li><a href="#" class="instagram"></a></li>
+                    <li><a href="#" class="facebook"></a><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></li>
+                    <li><a href="#" class="instagram"></a><i class="fa-brands fa-twitter" style="color: #b8b8b8;"></i></li>
                 </ul>
             </section>
             <section class="espacamento">
-                <img src="./img/logoo.png" alt="logo-rodape">
+                
             </section>
         </section>
 
